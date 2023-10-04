@@ -1,0 +1,90 @@
+body {
+font-size: 16px;
+font-family: Arial, Helvetica;
+margin: 0;
+color: white;
+}
+
+body::before {
+content: "";
+position: fixed;
+top: 0;
+left: 0;
+z-index: -1;
+width: 100%;
+height: 100vh;
+background-image:
+linear-gradient(rgba(20, 20, 60, .8), rgba(20, 20, 60, .8)),          url(https://www.shutterstock.com/image-photo/blur-education-background-university-students-260nw-519963457.jpg);
+background-color: rgba(20,20,60,.8);
+background-size: cover;
+background-position: center;
+}
+
+header {
+text-align: center;
+margin: 40px auto;
+line-height: .5;
+}
+
+p {
+  font-weight: 400;
+  text-shadow: 4px 4px 2px rgba(0,0,0,0.8);
+  }
+
+form {
+  background-color: rgba(70, 10, 150, 80% );
+  width: 60vw;
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  padding: 0 2em 2em;
+  color: white;
+  border-radius: 4px;
+}
+
+fieldset {
+  padding-top: 2rem;
+  border: none;
+  //border-bottom: 3px solid grey;
+}
+
+input, textarea, select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display:block;
+  width: 95%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  min-width: 300px;
+  background-color: grey;
+  border-color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#comments {
+resize: vertical;
+height: 80px;
+padding: 10px;
+}
+
+.question {
+  margin-top: 30px;
+  text-decoration: underline;
+}

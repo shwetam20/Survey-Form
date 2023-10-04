@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Survey Form</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main>
+  <header>
+  <h1 id="title">Survey Form</h1>
+  <p id="description"><i>Thank you for taking out the time to fill the form</i></p>
+  </header>
+  <form id="survey-form" action="/survey-form">
+  <section>
+    <fieldset>
+      <label id="name-label" for="full-name">Name<input type="text" name="full-name" id="name" placeholder="Enter your name" required></label>
+      <label id="email-label" for="email-id">Email<input type="email" name="email-id" id="email" placeholder="Enter your email" required></label>
+      <label id="number-label" for="age">Age (Optional)<input type="number" name="age" id="number" placeholder="Age" min="15" max="70"></label>
+    </fieldset>
+   <section>
+    <fieldset>
+      <label for="current-role" class="question">Which option best describes your current role?
+      <select id="dropdown" name="current-role" required>
+        <option value="">(select one)</option>
+        <option value="student">Student</option>
+        <option value="working">Full time job</option>
+        <option value="learning">Full time learner</option>
+        <option value="no-comments">Prefer not to say</option>
+        <option value="other">Other</option>
+      </select>
+      </label>
+      <label class="question">What do you want to learn?</label>
+      <label for="css"><input type="checkbox" value="css" name="css" id="css" class="inline">CSS</label>
+      <label for="html"><input type="checkbox" value="html" name="html" id="html" class="inline">HTML</label>
+      <label for="javascript"><input type="checkbox" value="javascript" name="javascript" id="javascript" class="inline">Javascript</label>
+      <label class="question">Specify your course level?</label>
+      <label for="newcomer"><input id="newcomer" type="radio" value="newcomer" name="course-level" class="inline">Newcomer<label>
+      <label for="intermediate"><input id="intermediate" type="radio" value="intermediate" name="course-level" class="inline">Intermediate<label>
+      <label for="advanced"><input id="advanced" type="radio" value="advanced" name="course-level" class="inline">Advanced<label>
+    </fieldset>
+  </section>
+  <section>  
+    <fieldset>
+    <label for="comments">Any comments or Suggestions?<textarea name="comments" id="comments" placeholder="Enter your comments here..."></textarea></label>
+  </fieldset>
+  </section>
+<input id="submit" type="submit" value="Submit">
+</form>
+</main>
+<body>
+</html>
